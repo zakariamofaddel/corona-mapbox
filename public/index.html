@@ -7,22 +7,41 @@
 			href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./style.css" />
 		<title>Coronavirus map</title>
-
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-			#map {
-				height: 100vh;
-				width: 100vw;
-			}
-		</style>
 	</head>
 	<body>
 		<div id="map"></div>
+		<div id="legenda">
+			<div class="legenda-item">
+				<div class="legenda-green"></div>
+				<h6 class="legenda-title">
+					Infected number is less than 2% of the population.
+				</h6>
+			</div>
+			<div class="legenda-item">
+				<div class="legenda-yellow"></div>
+				<h6 class="legenda-title">
+					Infected number is between 2% and 5% of the population.
+				</h6>
+			</div>
+			<div class="legenda-item">
+				<div class="legenda-orange"></div>
+				<h6 class="legenda-title">
+					Infected number is between 5% and 8% of the population.
+				</h6>
+			</div>
+			<div class="legenda-item">
+				<div class="legenda-red"></div>
+				<h6 class="legenda-title">
+					Infected number is greater than 8% of the population.
+				</h6>
+			</div>
+			<div class="legenda-item">
+				<div class="legenda-standard"></div>
+				<h6 class="legenda-title">Percentage not defined.</h6>
+			</div>
+		</div>
 
 		<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 		<script src="./index.js"></script>
