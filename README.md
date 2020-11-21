@@ -1,6 +1,7 @@
 # Corona Mapbox
 
-![Project Image]()
+![Project Image](public/imgs/coronamap-zoomout.png)
+![Project Image](public/imgs/coronamap-zoomin.png)
 
 ### Table of Contents
 
@@ -15,27 +16,25 @@ Sections headers will be used to reference location of destination.
 
 ## Description
 
-/
+I built this simple app that uses the mapbox API (so powerful and the docs are so easy to read) and that creates a marker with a different color for each country/region, depending on the percentage of cases.
+The data used to populate this map is from a local static file, since the API is not free.
+To get the data I just inspected the website coronavirus.app/map and looked in network for GET requests, once I found the object with all the places I stored it as a global variable, copied it with copy(JSON.stringify(data)) and saved it in my project as a .json file to be able to fetch it locally.
 
 #### Technologies
 
-/
+- HTML5
+- CSS3
+- Vanilla JS
 
 [Back To The Top](#book-scanner-web-app)
 
 ---
-
-## How To Use
-
-/
-
-[Back To The Top](#book-scanner-web-app)
 
 ---
 
 #### API Reference
 
-[Open Library API](https://openlibrary.org/developers/api)
+[MapBox API](https://docs.mapbox.com/mapbox-gl-js/api/)
 
 ---
 
