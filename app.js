@@ -1,32 +1,12 @@
-const mapbox_token =
-	"pk.eyJ1IjoiemFrYXJpYTk3IiwiYSI6ImNraHFzZ3UxcjAzZTEycWxodHMyYzVzejMifQ.XnvDv4_zdedxUe9qtUF_dQ";
+const express = require("express");
+//START SERVER
+const app = express();
 
-fetch("/data600.json")
-	.then((response) => response.json())
-	.then((data) => {
-		dataArray = data.data;
+//SET PUBLIC AS STATIC FORLDER WITH EXPRESS.STATIC MIDDLEWARE
+app.use(express.static("public"));
 
-		dataArray
-			.filter((report) => !report.invisible)
-			.forEach((report) => {
-				const {
-					recovered,
-					infected,
-					dead,
-					longitude,
-					latitude,
-					country,
-					name,
-				} = report;
+const PORT = 3000 || process.env.PORT;
 
-				console.log(
-					recovered,
-					infected,
-					longitude,
-					latitude,
-					name,
-					dead,
-					country
-				);
-			});
-	});
+app.listen(PORT, () => {
+	console.log(`Listening on port: ${PORT}`);
+});

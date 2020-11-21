@@ -1,0 +1,26 @@
+{
+  "name": "coronavirus-map-app",
+  "version": "1.0.0",
+  "description": "![Project Image]()",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakariamofaddel/corona-mapbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakariamofaddel/corona-mapbox/issues"
+  },
+  "homepage": "https://github.com/zakariamofaddel/corona-mapbox#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
